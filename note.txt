@@ -1,0 +1,16 @@
+how to create migration and faceory when creating model
+**php artisan make:model ModelName -mf
+
+how to use seeder with factory
+**php artisan make::seed NameTableSeeder
+--use model
+--add in run function **factory(Person::class, 50)->create();**
+
+how to use faceory
+factory use faker generator
+faceory generate array
+[
+    'first_name'=>$faker->firstName,
+    'last_name'=>$faker->lastName,
+]
+
